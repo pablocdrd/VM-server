@@ -57,10 +57,23 @@ devops-homelab/
 ### Start
 Run each stack from its folder:
 
-```bash
 cd npm
 docker compose up -d
 
 cd ../stacks/core
 docker compose up -d
 
+### Stop
+cd npm
+docker compose down
+
+cd ../stacks/core
+docker compose down
+
+## Configuration
+Environment variables should be stored in a local .env file (not committed).
+See .env.example for reference.
+
+## Security
+- Secrets are not committed to the repository (see .gitignore and .env.example)
+- This homelab is intended for private/internal network usage
