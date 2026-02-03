@@ -45,3 +45,22 @@ devops-homelab/
 ├── scripts/
 │   └── start.sh
 └── README.md
+
+---
+
+## How to run
+
+### Requirements
+- Docker installed
+- Docker Compose installed
+
+### Start
+Run each stack from its folder:
+
+```bash
+cd npm
+docker compose up -d
+
+cd ../stacks/core
+docker compose up -d
+
