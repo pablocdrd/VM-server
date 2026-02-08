@@ -11,6 +11,7 @@ This project is continuously evolving and used as a learning and experimentation
 - Learn and practice Linux administration
 - Understand Docker and container-based workflows
 - Implement a reverse proxy for service exposure
+- Add basic monitoring and observality
 - Build a foundation for future multi-node and networking setups
 
 ---
@@ -21,30 +22,33 @@ This project is continuously evolving and used as a learning and experimentation
 - Nginx Proxy Manager (Reverse Proxy)
 - Portainer (Container Management)
 - Test services (e.g. whoami)
+- Uptime Kuma (Monitoring)
 
 ---
 
 ## 🏗️ Architecture
 - Ubuntu VM running Docker as the host system
 - Nginx Proxy Manager handling incoming HTTP traffic
-- Isolated Docker networks for services
 - Portainer used to manage and monitor containers
 - Services exposed internally through the reverse proxy
+- Uptime Kuma (Monitoring)
 
 ---
 
 ## 📁 Project Structure
 ```text
-devops-homelab/
-├── docker-compose.yml
-├── services/
-│   └── whoami/
-│       └── docker-compose.yml
-├── nginx-proxy-manager/
-│   └── docker-compose.yml
-├── scripts/
-│   └── start.sh
+VM-server/
+├── stacks/
+│   ├── core/
+│   │   └── docker-compose.yml
+│   ├── npm/
+│   │   └── docker-compose.yml
+│   └── monitoring/
+│       └── uptime-kuma/
+│           └── docker-compose.yml
+├── .gitignore
 └── README.md
+
 
 ---
 
@@ -63,12 +67,18 @@ docker compose up -d
 cd ../stacks/core
 docker compose up -d
 
+cd ../monitoring/uptime-kuma
+docker-compose up -d
+
 ### Stop
 cd npm
 docker compose down
 
 cd ../stacks/core
 docker compose down
+
+cd ../monitoring/uptime-kuma
+docker-compose down
 
 ## Configuration
 Environment variables should be stored in a local .env file (not committed).
