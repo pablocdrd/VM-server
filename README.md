@@ -88,7 +88,7 @@ See .env.example for reference.
 - Secrets are not committed to the repository (see .gitignore and .env.example)
 - This homelab is intended for private/internal network usage
 
-
+```
 ## 📚 What I learned
 
 - Setting up and operating Dockerized services on a Linux VM  
