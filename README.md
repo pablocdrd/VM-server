@@ -87,3 +87,13 @@ See .env.example for reference.
 ## Security
 - Secrets are not committed to the repository (see .gitignore and .env.example)
 - This homelab is intended for private/internal network usage
+
+
+## 📚 What I learned
+
+- Setting up and operating Dockerized services on a Linux VM  
+- Using a reverse proxy (Nginx Proxy Manager) to expose internal services  
+- Managing containers and stacks with Portainer  
+- Implementing basic service monitoring and observability with Uptime Kuma  
+- Understanding the importance of uptime, response time and early failure detection  
+- Documenting infrastructure and services for reproducibility  
