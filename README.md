@@ -89,7 +89,7 @@ See .env.example for reference.
 - This homelab is intended for private/internal network usage
 
 ```
-## 📚 What I learned
+##  What I learned
 
 - Setting up and operating Dockerized services on a Linux VM  
 - Using a reverse proxy (Nginx Proxy Manager) to expose internal services  
