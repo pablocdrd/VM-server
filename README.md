@@ -7,7 +7,7 @@ This project is continuously evolving and used as a learning and experimentation
 
 ---
 
-## 🚀 Goals
+## Goals
 - Learn and practice Linux administration
 - Understand Docker and container-based workflows
 - Implement a reverse proxy for service exposure
@@ -16,7 +16,7 @@ This project is continuously evolving and used as a learning and experimentation
 
 ---
 
-## 🧱 Stack
+## Stack
 - Ubuntu Linux (Virtual Machine)
 - Docker & Docker Compose
 - Nginx Proxy Manager (Reverse Proxy)
@@ -26,7 +26,7 @@ This project is continuously evolving and used as a learning and experimentation
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 - Ubuntu VM running Docker as the host system
 - Nginx Proxy Manager handling incoming HTTP traffic
 - Portainer used to manage and monitor containers
@@ -35,7 +35,7 @@ This project is continuously evolving and used as a learning and experimentation
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 ```text
 VM-server/
 ├── stacks/
